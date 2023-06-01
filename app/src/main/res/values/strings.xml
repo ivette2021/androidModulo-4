@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">m4_ejerciciosGIT</string>
-    <string name="hi_ivette_valdivia">hi ivette valdivia</string>
+    <string name="ingrese_nombre">ingrese nombre</string>
+    <string name="ingrese_apellido">ingrese apellido</string>
+    <string name="ingrese_su_correo">ingrese su correo</string>
+    <string name="suscribirse">Registrarse</string>
+    <string name="registrate">Registrate</string>
+    <string name="email_obligatorio">Email (obligatorio)</string>
+    <string name="apellido_obligatorio">Apellido (obligatorio)</string>
+    <string name="nombre_obligatorio">Nombre (obligatorio)</string>
 </resources>

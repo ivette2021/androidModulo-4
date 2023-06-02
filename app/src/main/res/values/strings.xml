@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">m4_ejerciciosGIT</string>
     <string name="hi_ivette_valdivia">hi ivette valdivia</string>
+    <string name="suma">+</string>
+    <string name="resta">-</string>
+    <string name="division">/</string>
+    <string name="multiplicacion">*</string>
+    <string name="calculadora">calculadora</string>
+    <string name="numero_1">numero 1</string>
+    <string name="numero_2">numero 2</string>
+    <string name="icono_calculadora">icono calculadora</string>
 </resources>

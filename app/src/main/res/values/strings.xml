@@ -9,4 +9,5 @@
     <string name="numero_1">numero 1</string>
     <string name="numero_2">numero 2</string>
     <string name="icono_calculadora">icono calculadora</string>
+    <string name="salir">salir</string>
 </resources>

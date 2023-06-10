@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ActividadIndividual5</string>
+    <string name="registrarse">registrarse</string>
+    <string name="apellido">Apellido</string>
+    <string name="emailAddress">Email</string>
+    <string name="Password">Contraseña</string>
+    <string name="nombre">Nombre</string>
+    <string name="bienvenid">Bienvenid@</string>
+    <string name="email">Email</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="logo">logo</string>
+    <string name="volver">volver</string>
+</resources>

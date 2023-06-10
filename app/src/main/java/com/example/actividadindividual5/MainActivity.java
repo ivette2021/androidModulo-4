@@ -14,7 +14,7 @@ import com.example.actividadindividual5.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
     //definimos la variable binding
     private ActivityMainBinding mBinding; //declaro variable binding
-
+//
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

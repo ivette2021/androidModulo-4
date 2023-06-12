@@ -13,6 +13,7 @@
         android:layout_width="175dp"
         android:layout_height="70dp"
         android:layout_marginBottom="236dp"
+        android:onClick="Volver"
         android:text="@string/volver"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.example.actividadindividual5.databinding.ActivityMain2Binding;
 
@@ -25,6 +26,12 @@ public class MainActivity2 extends AppCompatActivity {
            mBinding.txt2.setText(intent.getStringExtra("Apellido"));
            mBinding.txt3.setText(intent.getStringExtra("Correo"));
            }
+
+    }
+    //metodo boton volver
+    public void Volver(View v){
+        Intent volver = new Intent(this,MainActivity.class);
+        startActivity(volver);
     }
 }
 

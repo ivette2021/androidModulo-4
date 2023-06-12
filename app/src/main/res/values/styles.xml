@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- Tema 1 -->
+        <style name="Tema1" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Personaliza los atributos del tema según tus necesidades -->
+        </style>
+
+        <!-- Tema 2 -->
+        <style name="Tema2" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Personaliza los atributos del tema según tus necesidades -->
+        </style>
+</resources>

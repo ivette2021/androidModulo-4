@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3BFFC2"
     tools:context=".MainActivity2">
 
 
@@ -13,8 +13,10 @@
         android:layout_width="175dp"
         android:layout_height="70dp"
         android:layout_marginBottom="236dp"
+        android:backgroundTint="#0C69E8"
         android:onClick="Volver"
         android:text="@string/volver"
+        android:textColor="#7700FF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,6 +27,8 @@
         android:layout_width="216dp"
         android:layout_height="53dp"
         android:text="@string/nombre"
+        android:textColor="#7700FF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/txt2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -38,6 +42,8 @@
         android:layout_height="52dp"
         android:layout_marginBottom="32dp"
         android:text="@string/apellido"
+        android:textColor="#7700FF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/txt3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -49,6 +55,8 @@
         android:layout_height="52dp"
         android:layout_marginBottom="32dp"
         android:text="@string/emailAddress"
+        android:textColor="#7700FF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/volver"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

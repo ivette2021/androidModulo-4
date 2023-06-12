@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3BFFC2"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/fotografia"
-        android:visibility="visible"
-
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
         android:contentDescription="@string/logo"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.111"
+        app:layout_constraintVertical_bias="0.087"
         tools:srcCompat="@tools:sample/avatars" />
 
     <EditText
@@ -28,14 +29,16 @@
         android:layout_marginTop="27dp"
         android:ems="10"
         android:hint="@string/nombre"
+        android:importantForAutofill="no"
         android:inputType="text"
+        android:textColor="#7700FF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fotografia"
-        app:layout_constraintVertical_bias="0.0"
-        android:importantForAutofill="no" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/apellido"
@@ -46,14 +49,16 @@
         android:layout_marginBottom="392dp"
         android:ems="10"
         android:hint="@string/apellido"
+        android:importantForAutofill="no"
         android:inputType="text"
+        android:textColor="#7700FF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/nombre"
         app:layout_constraintTop_toBottomOf="@+id/nombre"
-        app:layout_constraintVertical_bias="0.0"
-        android:importantForAutofill="no" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/emailAddress"
@@ -63,6 +68,8 @@
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
+        android:textColor="#7700FF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -78,6 +85,8 @@
         android:ems="10"
         android:hint="@string/contrase_a"
         android:inputType="textPassword"
+        android:textColor="#7700FF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -90,7 +99,11 @@
         android:layout_width="175dp"
         android:layout_height="70dp"
         android:layout_marginBottom="145dp"
+        android:background="#0C69E8"
+        android:backgroundTint="#0C69E8"
         android:text="@string/registrarse"
+        android:textColor="#7700FF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

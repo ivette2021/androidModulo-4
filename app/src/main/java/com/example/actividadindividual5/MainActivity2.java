@@ -21,9 +21,9 @@ public class MainActivity2 extends AppCompatActivity {
          Log.d("Prueba Activity2", intent.getStringExtra("Nombre"));
 
         if(intent!=null) {
-           mBinding.nombre.setText(intent.getStringExtra("Nombre"));
-           mBinding.apellido.setText(intent.getStringExtra("Apellido"));
-           mBinding.emailAddress.setText(intent.getStringExtra("Correo"));
+           mBinding.txt1.setText(intent.getStringExtra("Nombre"));
+           mBinding.txt2.setText(intent.getStringExtra("Apellido"));
+           mBinding.txt3.setText(intent.getStringExtra("Correo"));
            }
     }
 }

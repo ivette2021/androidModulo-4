@@ -9,7 +9,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-
     ImageButton imagen1;
     ImageButton imagen2;
     ImageButton imagen3;
@@ -27,30 +26,37 @@ public class MainActivity extends AppCompatActivity {
       imagen1.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
-              llamar2(""+R.mipmap.instagram,""+R.color.morado);
+              //todos los componentes de R.---.--- son de tipo INT, para llamarlos al otro lado como valores, simplemente, se setean como putExtra y se extraen como getInt
+              llamar2(R.mipmap.instagram,R.color.morado);
+
           }
       });
         imagen2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                llamar2(""+R.mipmap.gorjeo,""+R.color.celeste);
+
+                llamar2(R.mipmap.gorjeo,R.color.celeste);
+
             }
         });
         imagen3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                llamar2(""+R.mipmap.git,""+R.color.naranjo);
+                llamar2(R.mipmap.git,R.color.naranjo);
+
             }
         });
         imagen4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                llamar2(""+R.mipmap.facebook1,""+R.color.azul);
+
+                llamar2(R.mipmap.facebook1,R.color.azul);
+
             }
         });
     }
 
-    protected  void llamar2(String image, String color){
+    protected  void llamar2(int image, int color){
         Intent intento =new Intent(MainActivity.this,MainActivity2.class);
         intento.putExtra("imagen",image);
         intento.putExtra("color",color);

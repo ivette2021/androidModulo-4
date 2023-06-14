@@ -1,49 +1,68 @@
 package com.example.actividadindividual5;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.actividadindividual5.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    //definimos la variable binding
-    private ActivityMainBinding mBinding; //declaro variable binding
-//
+
+    private ActivityMainBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //vista binding
-        mBinding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(mBinding.getRoot());
-        // mBinding.nombre.setText("ivette"); ejemplo para setear algo en particular
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
 
-        //mandar datos de una pantalla a otra
-        mBinding.registrarse.setOnClickListener(new View.OnClickListener() {
+        binding.btnAirplaneMode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = mBinding.nombre.getText().toString();
-                String lastname = mBinding.apellido.getText().toString();
-                String email = mBinding.emailAddress.getText().toString();
-                String password = mBinding.password.getText().toString();
-                Log.d("Prueba", "" + name + "" + lastname + "" + email);
-                passsecond(name,lastname,email);
+                showToast("Modo Avión");
+            }
+        });
+
+        binding.btnUpdateProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToast("Actualizar Perfil");
+            }
+        });
+
+        binding.btnSaveImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToast("Guardar en Galería");
+            }
+        });
+
+        binding.btnLevelCompleted.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToast("Nivel 4 Completado");
+            }
+        });
+
+        binding.btnPausedMusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToast("Música Pausada");
+            }
+        });
+
+        binding.btnLevelUnlocked.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showToast("Nivel 5 Desbloqueado");
             }
         });
     }
-    private void passsecond(String name, String lastname, String email) {
-        //donde estoy y donde voy
-        Intent passSecond = new Intent(MainActivity.this,MainActivity2.class);
-        Log.d("Prueba", "" +name+ "" +lastname + "" +email);
 
-        passSecond.putExtra("Nombre", name);
-        passSecond.putExtra("Apellido", lastname);
-        passSecond.putExtra("Correo", email);
-        startActivity(passSecond);
+    private void showToast(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }

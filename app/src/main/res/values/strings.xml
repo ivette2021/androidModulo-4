@@ -1,13 +1,10 @@
 <resources>
     <string name="app_name">ActividadIndividual5</string>
-    <string name="registrarse">registrarse</string>
-    <string name="apellido">Apellido</string>
-    <string name="emailAddress">Email</string>
-    <string name="Password">Contraseña</string>
-    <string name="nombre">Nombre</string>
-    <string name="bienvenid">Bienvenid@</string>
-    <string name="email">Email</string>
-    <string name="contrase_a">Contraseña</string>
-    <string name="logo">logo</string>
-    <string name="volver">volver</string>
+    <string name="IB">Informacion</string>
+    <string name="nivel_5_desbloqueado">Nivel 5 Desbloqueado</string>
+    <string name="m_sica_pausada">Música Pausada</string>
+    <string name="nivel_4_completado">Nivel 4 Completado</string>
+    <string name="guardar_en_galer_a">Guardar en Galería</string>
+    <string name="actualizar_perfil">Actualizar Perfil</string>
+    <string name="modo_avi_n">Modo Avión</string>
 </resources>

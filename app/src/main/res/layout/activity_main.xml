@@ -1,101 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/fotografia"
-        android:visibility="visible"
-
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnAirplaneMode"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="248dp"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/logo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.111"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <EditText
-        android:id="@+id/nombre"
-        android:layout_width="225dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="27dp"
-        android:ems="10"
-        android:hint="@string/nombre"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fotografia"
-        app:layout_constraintVertical_bias="0.0"
-        android:importantForAutofill="no" />
-
-    <EditText
-        android:id="@+id/apellido"
-        android:layout_width="225dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="92dp"
-        android:layout_marginBottom="392dp"
-        android:ems="10"
-        android:hint="@string/apellido"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/nombre"
-        app:layout_constraintTop_toBottomOf="@+id/nombre"
-        app:layout_constraintVertical_bias="0.0"
-        android:importantForAutofill="no" />
-
-    <EditText
-        android:id="@+id/emailAddress"
-        android:layout_width="227dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/apellido"
-        app:layout_constraintTop_toBottomOf="@+id/apellido"
-        app:layout_constraintVertical_bias="0.014" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="227dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:hint="@string/contrase_a"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailAddress"
-        app:layout_constraintVertical_bias="0.007" />
+        android:backgroundTint="#673AB7"
+        android:contentDescription="@string/IB"
+        android:drawableStart="@drawable/ic_airplane"
+        android:text="@string/modo_avi_n"
+        android:textColor="#FFFFFF"
+        app:iconGravity="textEnd"
+        app:iconPadding="8dp" />
 
     <Button
-        android:id="@+id/registrarse"
-        android:layout_width="175dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="145dp"
-        android:text="@string/registrarse"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fotografia"
-        app:layout_constraintVertical_bias="1.0" />
+        android:id="@+id/btnUpdateProfile"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:contentDescription="@string/IB"
+        android:drawableStart="@drawable/ic_update"
+        android:text="@string/actualizar_perfil"
+        android:textColor="#FAF7F7"
+        app:iconGravity="end"
+        app:iconPadding="8dp" />
+
+    <Button
+        android:id="@+id/btnSaveImage"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7A7979"
+        android:contentDescription="@string/IB"
+        android:drawableStart="@drawable/ic_save"
+        android:text="@string/guardar_en_galer_a"
+        android:textColor="#FAFAFA"
+        app:iconGravity="end"
+        app:iconPadding="8dp" />
+
+    <Button
+        android:id="@+id/btnLevelCompleted"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
+        android:contentDescription="@string/IB"
+        android:drawableStart="@drawable/ic_star"
+        android:drawableEnd="@drawable/ic_star"
+        android:text="@string/nivel_4_completado"
+        android:textColor="#FFFFFF"
+        app:iconGravity="end|textEnd"
+        app:iconPadding="8dp" />
+
+    <Button
+        android:id="@+id/btnPausedMusic"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#009688"
+        android:contentDescription="@string/IB"
+        android:drawableStart="@drawable/ic_pause"
+        android:text="@string/m_sica_pausada"
+        android:textColor="#FFFFFF"
+        app:iconGravity="end"
+        app:iconPadding="8dp" />
+
+    <Button
+        android:id="@+id/btnLevelUnlocked"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4A4A4A"
+        android:contentDescription="@string/IB"
+        android:drawableStart="@drawable/ic_unlock"
+        android:text="@string/nivel_5_desbloqueado"
+        android:textColor="#FFFFFF"
+        app:iconGravity="top"
+        app:iconPadding="8dp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

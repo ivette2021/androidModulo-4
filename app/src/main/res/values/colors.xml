@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="platino">#D3D4D9</color>
-    <color name="grisoscuro">D3D4D9</color>
+    <color name="grisoscuro">#494B4D</color>
+    <color name="grisclaro">#8A8783</color>
     <color name="azul">#4B88A2</color>
     <color name="rojo">#BB0A21</color>
     <color name="negro">#252627</color>
     <color name="pasas">#221E1F</color>
+
+
+    <color name="vclaro">#ACF266</color>
+    <color name="voscuro">#8ABF54</color>
+    <color name="rclaro">#F2836B</color>
+    <color name="roscuro">#F26B5E</color>
+    <color name="black">#0D0D0D</color>
 </resources>

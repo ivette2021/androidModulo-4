@@ -6,4 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity3">
 
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="69dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="116dp"
+        android:background="null"
+        android:contentDescription="@string/IB"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/encort"
+        android:textColor="@color/azul"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/menu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="667dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu">
+
+
+        <TextView
+            android:id="@+id/direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="@string/direccion"
+            android:textColor="@color/platino"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/titulo2"
+            android:textSize="22sp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_mapa"
+            android:layout_width="match_parent"
+            android:layout_height="547dp"
+            android:contentDescription="@string/IB"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedImageStyle1"
+            app:srcCompat="@drawable/img_map" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

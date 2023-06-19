@@ -6,4 +6,156 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/titulo"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/subtitulo"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/banner3"
+                android:layout_width="111dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="540dp"
+                android:backgroundTint="@color/grisclaro"
+                android:contentDescription="@string/IB"
+                android:rotation="90"
+                android:text=""
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/banner1"
+                android:layout_width="111dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="540dp"
+                android:backgroundTint="@color/grisclaro"
+                android:contentDescription="@string/IB"
+                android:rotation="90"
+                android:text=""
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="111dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="540dp"
+                android:backgroundTint="@color/grisclaro"
+                android:contentDescription="@string/IB"
+                android:rotation="90"
+                android:text=""
+                tools:ignore="MissingConstraints" />
+
+            <Button
+
+                android:id="@+id/banner2"
+                android:layout_width="111dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="540dp"
+                android:backgroundTint="@color/grisclaro"
+                android:contentDescription="@string/IB"
+                android:rotation="90"
+                android:text=""
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <GridLayout
+        android:layout_width="413dp"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="280dp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:background="null"
+            android:alpha="0.5"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_fries"
+            app:shapeAppearanceOverlay="@style/roundedImageStyle"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:background="null"
+            android:alpha="0.5"
+            android:contentDescription="@string/IB"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_pizza"
+            app:shapeAppearanceOverlay="@style/roundedImageStyle"/>
+
+    </GridLayout>
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="69dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="1dp"
+        android:background="null"
+        android:contentDescription="@string/IB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="-40dp"
+        android:text="@string/encort"
+        android:textColor="@color/azul"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/menu"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

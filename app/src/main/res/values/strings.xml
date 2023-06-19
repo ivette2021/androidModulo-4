@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">m4_ejerciciosGIT</string>
-    <string name="hi_ivette_valdivia">hi ivette valdivia</string>
+    <string name="IB">IB</string>
+    <string name="encort">ENCORT</string>
+    <string name="subtitulo">Categorías</string>
+    <string name="titulo">¿Qué quieres comer?</string>
+    <string name="direccion">Quinta Normal, Victor Hugo 1223</string>
+    <string name="titulo2">Encuentranos!</string>
+
 </resources>

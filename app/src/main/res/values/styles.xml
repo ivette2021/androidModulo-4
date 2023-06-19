@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="roundImageView" parent="Widget.AppCompat.ImageButton">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="color">@color/platino</item>
+    </style>
+    <style name="AppTheme.Button1" parent="Widget.AppCompat.Button" >
+        <item name="android:layout_width">111dp</item>
+        <item name= "android:layout_height">72dp</item>
+        <item name="android:layout_marginTop">123dp</item>
+        <item name="android:layout_marginBottom">540dp</item>
+        <item name= "android:backgroundTint">@color/grisclaro</item>
+        <item name= "android:contentDescription">@string/IB</item>
+        <item name="android:rotation">90</item>
+    </style>
+    <style name="roundedImageStyle" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15%</item>
+    </style>
+    <style name="circleImageStyle" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="cornerCutImageStyle" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">15%</item>
+    </style>
+    <style name="customImageStyle" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">50%</item>
+        <item name="cornerSizeTopRight">50%</item>
+        <item name="cornerSizeBottomLeft">50%</item>
+    </style>
+    <style name="roundedImageStyle1" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">5%</item>
+    </style>
+</resources>

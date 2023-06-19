@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="platino">#D3D4D9</color>
+    <color name="grisoscuro">D3D4D9</color>
+    <color name="azul">#4B88A2</color>
+    <color name="rojo">#BB0A21</color>
+    <color name="negro">#252627</color>
+    <color name="pasas">#221E1F</color>
 </resources>

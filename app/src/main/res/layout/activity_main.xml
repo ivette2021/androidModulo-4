@@ -5,30 +5,77 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/azul">
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hi_ivette_valdivia"
-        android:textSize="34sp" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+        <TextView
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:id="@+id/textView"
+            android:drawablePadding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_home"
+            android:text="Inicio"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/platino"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_anchor="@+id/constraintLayout"
-        app:layout_anchorGravity="center" />
+        <TextView
+            android:id="@+id/textView2"
+            android:drawablePadding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_carrito"
+            android:layout_marginStart="30dp"
+            android:text="Mi carrito"
+            android:textColor="@color/platino"/>
 
+        <TextView
+            android:id="@+id/textView3"
+            android:drawablePadding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:drawableStart="@drawable/ic_order"
+            android:text="Mi orden"
+            android:textColor="@color/platino"/>
 
+        <TextView
+            android:id="@+id/textView4"
+            android:drawablePadding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:drawableStart="@drawable/ic_pay"
+            android:text="Pagos"
+            android:textColor="@color/platino"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:drawablePadding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:drawableStart="@drawable/ic_ubicacion"
+            android:text="Ubicacion"
+            android:textColor="@color/platino"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:drawablePadding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:drawableStart="@drawable/ic_salir"
+            android:text="Salir"
+            android:textColor="@color/platino"/>
+
+    </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

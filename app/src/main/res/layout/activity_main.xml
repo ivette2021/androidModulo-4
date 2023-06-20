@@ -25,10 +25,11 @@
 
             <TextView
                 android:id="@+id/nombre"
-                android:layout_width="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_width="280dp"
                 android:layout_height="78dp"
-                android:text="ENCORT"
-                android:textSize="30dp"
+                android:text="@string/encort"
+                android:textSize="37sp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="@color/azul"/>
@@ -36,82 +37,93 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="140dp">
+            android:layout_height="80dp">
 
         </Space>
 
-        <TextView
-
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/home"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginBottom="12dp"
-            android:drawableStart="@drawable/ic_home"
+            android:background="@color/cardview_shadow_end_color"
+            android:drawableLeft="@drawable/ic_home"
             android:drawablePadding="12dp"
-            android:text="Inicio"
+            android:focusable="true"
+            android:text="@string/inicio"
             android:textColor="@color/platino"
-            android:textSize="22dp" />
+            android:textSize="37sp" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/chart"
+            android:background="@color/cardview_shadow_end_color"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginBottom="12dp"
-            android:drawableStart="@drawable/ic_carrito"
             android:drawablePadding="12dp"
-            android:text="Mi carrito"
+            android:text="@string/mi_carrito"
             android:textColor="@color/platino"
-            android:textSize="22dp" />
+            android:textSize="37sp"
+            android:drawableLeft="@drawable/ic_carrito"
+            android:focusable="true" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
+        <Button
+            android:background="@color/cardview_shadow_end_color"
+            android:id="@+id/mi_orden"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginBottom="12dp"
-            android:drawableStart="@drawable/ic_order"
             android:drawablePadding="12dp"
-            android:text="Mi orden"
+            android:text="@string/mi_orden"
             android:textColor="@color/platino"
-            android:textSize="22dp" />
+            android:textSize="37sp"
+            android:drawableLeft="@drawable/ic_order"
+            android:focusable="true" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/pays"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginBottom="12dp"
-            android:drawableStart="@drawable/ic_pay"
+            android:background="@color/cardview_shadow_end_color"
             android:drawablePadding="12dp"
-            android:text="Pagos"
+            android:text="@string/pagos"
             android:textColor="@color/platino"
-            android:textSize="22dp" />
+            android:textSize="37sp"
+            android:drawableLeft="@drawable/ic_pay"
+            android:focusable="true" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/location"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginBottom="12dp"
-            android:drawableStart="@drawable/ic_ubicacion"
+            android:background="@color/cardview_shadow_end_color"
+            android:drawableLeft="@drawable/ic_ubicacion"
             android:drawablePadding="12dp"
-            android:text="Ubicacion"
+            android:focusable="true"
+            android:text="@string/ubicacion"
             android:textColor="@color/platino"
-            android:textSize="22dp" />
+            android:textSize="37sp" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
             android:layout_marginBottom="12dp"
-            android:drawableStart="@drawable/ic_salir"
             android:drawablePadding="12dp"
-            android:text="Salir"
+            android:text="@string/salir"
+            android:background="@color/cardview_shadow_end_color"
             android:textColor="@color/platino"
-            android:textSize="22dp" />
+            android:textSize="37sp"
+            android:drawableLeft="@drawable/ic_salir"
+            android:focusable="true" />
 
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -12,8 +12,8 @@
         android:layout_height="80dp"
         android:layout_marginStart="17dp"
         android:layout_marginTop="1dp"
+        android:backgroundTint="@color/cardview_shadow_end_color"
         android:layout_marginEnd="116dp"
-        android:background="null"
         android:contentDescription="@string/IB"
         app:layout_constraintEnd_toStartOf="@+id/textView7"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,13 +46,18 @@
         app:layout_constraintTop_toBottomOf="@+id/menu">
 
 
-        <TextView
+        <Button
             android:id="@+id/direccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:backgroundTint="#d3d4d9"
             android:text="@string/direccion"
-            android:textColor="@color/platino"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_ubicacion"
+            android:clickable="false"
             android:textSize="20sp" />
 
         <TextView
@@ -64,13 +69,13 @@
             android:textSize="22sp" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/img_mapa"
+            android:id="@+id/img_mapa1"
             android:layout_width="match_parent"
             android:layout_height="547dp"
             android:contentDescription="@string/IB"
             android:scaleType="centerCrop"
             app:shapeAppearanceOverlay="@style/roundedImageStyle1"
-            app:srcCompat="@drawable/img_map" />
+            app:srcCompat="@drawable/img_map1" />
 
     </LinearLayout>
 

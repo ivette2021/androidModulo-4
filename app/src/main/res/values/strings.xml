@@ -6,5 +6,12 @@
     <string name="titulo">¿Qué quieres comer?</string>
     <string name="direccion">Quinta Normal, Victor Hugo 1223</string>
     <string name="titulo2">Encuentranos!</string>
+    <string name="inicio">Inicio</string>
+    <string name="mi_carrito">Mi carrito</string>
+    <string name="mi_orden">Mi orden</string>
+    <string name="pagos">Pagos</string>
+    <string name="ubicacion">Ubicacion</string>
+    <string name="salir">Salir</string>
+    <string name="subtitulo3">Más Populares</string>
 
 </resources>

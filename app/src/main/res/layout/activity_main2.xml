@@ -19,6 +19,7 @@
 
         <TextView
             android:id="@+id/textView8"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
@@ -42,53 +43,44 @@
 
 
             <Button
-                android:id="@+id/banner3"
-                android:layout_width="111dp"
+                android:id="@+id/botonPapa"
+                android:layout_width="wrap_content"
                 android:layout_height="72dp"
+                android:layout_marginLeft="7dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="540dp"
-                android:backgroundTint="@color/grisclaro"
+                android:backgroundTint="@color/azul"
                 android:contentDescription="@string/IB"
-                android:rotation="90"
-                android:text=""
-                tools:ignore="MissingConstraints" />
+                android:drawableLeft="@drawable/ic_fries"
+                android:text="papas"
+                tools:ignore="ButtonStyle,MissingConstraints,RtlHardcoded" />
 
             <Button
-                android:id="@+id/banner1"
-                android:layout_width="111dp"
+                android:id="@+id/botonPizza"
+                android:layout_width="130dp"
                 android:layout_height="72dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="40dp"
+                android:layout_marginRight="6dp"
                 android:layout_marginBottom="540dp"
-                android:backgroundTint="@color/grisclaro"
+                android:backgroundTint="@color/azul"
                 android:contentDescription="@string/IB"
-                android:rotation="90"
-                android:text=""
-                tools:ignore="MissingConstraints" />
+                android:drawableLeft="@drawable/ic_pizza"
+
+                android:text="pizza"
+                tools:ignore="MissingConstraints,RtlHardcoded" />
 
             <Button
-                android:id="@+id/button4"
-                android:layout_width="111dp"
+                android:id="@+id/botonBebida"
+                android:layout_width="wrap_content"
                 android:layout_height="72dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="540dp"
-                android:backgroundTint="@color/grisclaro"
+                android:backgroundTint="@color/azul"
                 android:contentDescription="@string/IB"
-                android:rotation="90"
-                android:text=""
-                tools:ignore="MissingConstraints" />
-
-            <Button
-
-                android:id="@+id/banner2"
-                android:layout_width="111dp"
-                android:layout_height="72dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="540dp"
-                android:backgroundTint="@color/grisclaro"
-                android:contentDescription="@string/IB"
-                android:rotation="90"
-                android:text=""
-                tools:ignore="MissingConstraints" />
+                android:drawableLeft="@drawable/ic_drink"
+                android:text="bebidas"
+                tools:ignore="ButtonStyle,MissingConstraints,RtlHardcoded" />
 
         </LinearLayout>
     </LinearLayout>
@@ -97,37 +89,55 @@
     <GridLayout
         android:layout_width="413dp"
         android:layout_height="450dp"
+        android:layout_marginTop="280dp"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="280dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
 
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/subtitulo3"
+            android:textSize="16sp" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imageButton"
+            android:id="@+id/imagenPapaFrita"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
             android:adjustViewBounds="true"
-            android:background="null"
             android:alpha="0.5"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/img_fries"
-            app:shapeAppearanceOverlay="@style/roundedImageStyle"/>
+            app:shapeAppearanceOverlay="@style/roundedImageStyle"
+            app:srcCompat="@drawable/imgfries" />
 
         <com.google.android.material.imageview.ShapeableImageView
 
-            android:id="@+id/imageButton2"
+            android:id="@+id/imagenPizza"
             android:layout_width="match_parent"
             android:layout_height="184dp"
             android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
             android:adjustViewBounds="true"
-            android:background="null"
             android:alpha="0.5"
             android:contentDescription="@string/IB"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/img_pizza"
-            app:shapeAppearanceOverlay="@style/roundedImageStyle"/>
+            app:shapeAppearanceOverlay="@style/roundedImageStyle"
+            app:srcCompat="@drawable/imgpizza" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="TextView" />
 
     </GridLayout>
 
@@ -137,7 +147,7 @@
         android:layout_height="80dp"
         android:layout_marginStart="17dp"
         android:layout_marginTop="1dp"
-        android:background="null"
+        android:background="@color/cardview_shadow_end_color"
         android:contentDescription="@string/IB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

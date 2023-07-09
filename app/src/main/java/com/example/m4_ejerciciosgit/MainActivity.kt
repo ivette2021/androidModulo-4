@@ -1,26 +1,17 @@
-package com.example.m4_ejerciciosgit;
+package com.example.m4_ejerciciosgit
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
-import android.os.Bundle;
+class MainActivity : AppCompatActivity() {//se omite el public por que es una visibilidad predeterminada ,en class en vez de extends se colocan ":"
 
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    override fun onCreate(savedInstanceState: Bundle?) {//protected void se cambia por override fun
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
     }
-    protected void sumaBoton(){
-
-    }
-    protected void restaBoton(){
-
-    }
-    protected void divisionBoton(){
-
-    }
-    protected void multiplicacionBoton(){
-
-    }
+//anula el void se cambia por fun
+    protected fun sumaBoton() {}
+    protected fun restaBoton() {}
+    protected fun divisionBoton() {}
+    protected fun multiplicacionBoton() {}
 }
